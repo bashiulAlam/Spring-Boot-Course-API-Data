@@ -1,5 +1,7 @@
-package com.sample.repository;
+package com.sample.model;
 
+import com.sample.repository.TopicRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -12,6 +14,9 @@ import java.util.List;
 
 @Service
 public class TopicService {
+
+    @Autowired
+    private TopicRepository topicRepository;
 
     private List<Topic> topicList = new ArrayList<>(Arrays.asList(
             new Topic("1", "CSE 101", "Intro to CSE"),

@@ -1,8 +1,8 @@
 package com.sample.controller;
 
 import com.google.gson.Gson;
-import com.sample.repository.Topic;
-import com.sample.repository.TopicService;
+import com.sample.model.Topic;
+import com.sample.model.TopicService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
