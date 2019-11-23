@@ -1,0 +1,98 @@
+2019-11-23 21:27:36,475 INFO org.springframework.boot.StartupInfoLogger [main] Starting CourseAPIData on LAPTOP-HMFUJK93 with PID 3048 (started by SABAB in D:\IntelliJ Projects\Spring-Boot-Course-API with Data)
+2019-11-23 21:27:36,494 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-11-23 21:27:36,494 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-23 21:27:36,549 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43ee72e6: startup date [Sat Nov 23 21:27:36 BDT 2019]; root of context hierarchy
+2019-11-23 21:27:36,918 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 21:27:38,345 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [main] Tomcat initialized with port(s): 8080 (http)
+2019-11-23 21:27:38,355 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-11-23 21:27:38,355 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 21:27:38,455 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-11-23 21:27:38,455 INFO org.springframework.boot.context.embedded.EmbeddedWebApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1906 ms
+2019-11-23 21:27:38,580 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 21:27:38,583 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 21:27:38,584 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 21:27:38,584 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 21:27:38,584 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 21:27:39,396 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-23 21:27:39,414 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-23 21:27:39,501 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-23 21:27:39,502 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2019-11-23 21:27:39,504 INFO org.hibernate.cfg.Environment [main] HHH000021: Bytecode provider name : javassist
+2019-11-23 21:27:39,538 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-23 21:27:39,670 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-11-23 21:27:39,670 WARN org.hibernate.dialect.DerbyDialect [main] HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-11-23 21:27:40,106 INFO org.hibernate.tool.hbm2ddl.SchemaExport [main] HHH000227: Running hbm2ddl schema export
+2019-11-23 21:27:40,108 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [main] SQL Warning Code: 10000, SQLState: 01J01
+2019-11-23 21:27:40,108 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [main] Database 'memory:testdb' not created, connection made to existing database instead.
+2019-11-23 21:27:40,108 INFO org.hibernate.tool.hbm2ddl.SchemaExport [main] HHH000230: Schema export complete
+2019-11-23 21:27:40,139 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-23 21:27:40,510 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43ee72e6: startup date [Sat Nov 23 21:27:36 BDT 2019]; root of context hierarchy
+2019-11-23 21:27:40,602 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}]}" onto public com.sample.repository.Topic com.sample.controller.TopicController.getTopicById(java.lang.String)
+2019-11-23 21:27:40,603 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics]}" onto public java.util.List<com.sample.repository.Topic> com.sample.controller.TopicController.getTopics()
+2019-11-23 21:27:40,604 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}],methods=[DELETE]}" onto public void com.sample.controller.TopicController.deleteTopic(java.lang.String)
+2019-11-23 21:27:40,604 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics],methods=[POST]}" onto public void com.sample.controller.TopicController.addTopic(com.sample.repository.Topic)
+2019-11-23 21:27:40,605 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}],methods=[PUT]}" onto public void com.sample.controller.TopicController.updateTopic(com.sample.repository.Topic,java.lang.String)
+2019-11-23 21:27:40,607 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 21:27:40,607 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 21:27:40,626 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 21:27:40,626 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 21:27:40,656 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 21:27:40,933 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2019-11-23 21:27:40,945 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-11-23 21:27:40,949 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-11-23 21:27:40,966 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2019-11-23 21:27:40,978 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [main] Tomcat started on port(s): 8080 (http)
+2019-11-23 21:27:40,978 INFO org.springframework.boot.StartupInfoLogger [main] Started CourseAPIData in 4.775 seconds (JVM running for 5.489)
+2019-11-23 21:29:21,475 INFO org.springframework.boot.StartupInfoLogger [main] Starting CourseAPIData on LAPTOP-HMFUJK93 with PID 2872 (started by SABAB in D:\IntelliJ Projects\Spring-Boot-Course-API with Data)
+2019-11-23 21:29:21,475 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-11-23 21:29:21,475 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-23 21:29:21,516 INFO org.springframework.context.support.AbstractApplicationContext [main] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Sat Nov 23 21:29:21 BDT 2019]; root of context hierarchy
+2019-11-23 21:29:21,847 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 5.3.6.Final
+2019-11-23 21:29:23,145 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [main] Tomcat initialized with port(s): 1010 (http)
+2019-11-23 21:29:23,155 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-11-23 21:29:23,155 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-11-23 21:29:23,297 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-11-23 21:29:23,297 INFO org.springframework.boot.context.embedded.EmbeddedWebApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1781 ms
+2019-11-23 21:29:23,417 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-23 21:29:23,420 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-23 21:29:23,420 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-23 21:29:23,421 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-23 21:29:23,421 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-23 21:29:24,121 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-23 21:29:24,141 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-23 21:29:24,203 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-23 21:29:24,203 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2019-11-23 21:29:24,203 INFO org.hibernate.cfg.Environment [main] HHH000021: Bytecode provider name : javassist
+2019-11-23 21:29:24,241 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-23 21:29:24,329 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-11-23 21:29:24,341 WARN org.hibernate.dialect.DerbyDialect [main] HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-11-23 21:29:24,714 INFO org.hibernate.tool.hbm2ddl.SchemaExport [main] HHH000227: Running hbm2ddl schema export
+2019-11-23 21:29:24,714 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [main] SQL Warning Code: 10000, SQLState: 01J01
+2019-11-23 21:29:24,714 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper$StandardWarningHandler [main] Database 'memory:testdb' not created, connection made to existing database instead.
+2019-11-23 21:29:24,714 INFO org.hibernate.tool.hbm2ddl.SchemaExport [main] HHH000230: Schema export complete
+2019-11-23 21:29:24,730 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-23 21:29:25,080 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78e94dcf: startup date [Sat Nov 23 21:29:21 BDT 2019]; root of context hierarchy
+2019-11-23 21:29:25,179 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics]}" onto public java.util.List<com.sample.repository.Topic> com.sample.controller.TopicController.getTopics()
+2019-11-23 21:29:25,187 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}],methods=[PUT]}" onto public void com.sample.controller.TopicController.updateTopic(com.sample.repository.Topic,java.lang.String)
+2019-11-23 21:29:25,187 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}],methods=[DELETE]}" onto public void com.sample.controller.TopicController.deleteTopic(java.lang.String)
+2019-11-23 21:29:25,187 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics/{id}]}" onto public com.sample.repository.Topic com.sample.controller.TopicController.getTopicById(java.lang.String)
+2019-11-23 21:29:25,187 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/topics],methods=[POST]}" onto public void com.sample.controller.TopicController.addTopic(com.sample.repository.Topic)
+2019-11-23 21:29:25,189 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-23 21:29:25,189 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [main] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-23 21:29:25,219 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 21:29:25,219 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 21:29:25,260 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-23 21:29:25,520 INFO org.springframework.jmx.export.MBeanExporter [main] Registering beans for JMX exposure on startup
+2019-11-23 21:29:25,532 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-1010"]
+2019-11-23 21:29:25,540 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-1010"]
+2019-11-23 21:29:25,550 INFO org.apache.juli.logging.DirectJDKLog [main] Using a shared selector for servlet write/read
+2019-11-23 21:29:25,562 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [main] Tomcat started on port(s): 1010 (http)
+2019-11-23 21:29:25,562 INFO org.springframework.boot.StartupInfoLogger [main] Started CourseAPIData in 4.335 seconds (JVM running for 4.869)
+2019-11-23 21:29:37,013 INFO org.apache.juli.logging.DirectJDKLog [http-nio-1010-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-23 21:29:37,014 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1010-exec-1] FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-23 21:29:37,032 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-1010-exec-1] FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-11-23 21:29:37,147 INFO com.sample.controller.TopicController [http-nio-1010-exec-1] Getting all topics...
