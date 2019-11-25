@@ -18,34 +18,40 @@ public class TopicService {
     @Autowired
     private TopicRepository topicRepository;
 
-    private List<Topic> topicList = new ArrayList<>(Arrays.asList(
-            new Topic("1", "CSE 101", "Intro to CSE"),
-            new Topic("2", "CSE 201", "C Programming"),
-            new Topic("3", "CSE 223", "OOP")
-    ));
-
     public List<Topic> getAllTopic() {
-        return topicList;
+        //return topicList;
+
+        List<Topic> topics = new ArrayList<>();
+        topicRepository.findAll().forEach(topics::add);
+
+        return topics;
     }
 
     public Topic getTopicById(String id) {
-        return topicList.stream().filter(t -> t.getId().equals(id)).findFirst().get();
+        //return topicList.stream().filter(t -> t.getId().equals(id)).findFirst().get();
+
+        return topicRepository.findOne(id);
     }
 
     public void addTopic(Topic topic) {
-        topicList.add(topic);
+        //topicList.add(topic);
+        topicRepository.save(topic);
     }
 
     public void updateTopic(String id, Topic topic) {
-        for (Topic topicItem : topicList) {
+        /*for (Topic topicItem : topicList) {
             if (topicItem.getId().equals(id)) {
                 topicList.set(topicList.indexOf(topicItem), topic);
                 return;
             }
-        }
+        }*/
+
+        topicRepository.save(topic);
     }
 
     public void deleteTopic(String id) {
-        topicList.removeIf(t -> t.getId().equals(id));
+        //topicList.removeIf(t -> t.getId().equals(id));
+
+        topicRepository.delete(id);
     }
 }
